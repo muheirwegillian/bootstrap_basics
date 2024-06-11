@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 5 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">col 1</div>
+
+            <div class="col-md-2">col 2</div>
+
+            <div class="col-md-2">col 3</div>
+
+            <div class="col-md-2">col 4</div>
+
+            <div class="col-md-2">col 5</div>
+
+            <div class="col-md-2">col 6</div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="col1">col1</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="col2">col2</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="col3">col3</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="col4">col4</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="col5">col5</div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="col6">col6</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col1">side left</div>
+            </div>
+            <!-- the contant below has been nested the main colunm -->
+            <div class="col-md-6">
+                <div class="col2">main col
+
+                    <div class="row">
+                        <div class="col-md-6" style="background-color: lime;">
+                            <p> inside </p>
+                            <p> inside </p>
+                            <p> inside </p>
+                            <p> inside </p>
+                        </div>
+                        <!-- the visible class property helps to display only on specific devices ie
+ <div class="col-md-6" visible-md visible-lg"> </div> then it will not display in small devices-->
+
+                        <!-- u can also limite wat colum u wat to display ie
+   <div class="col-md-3 visible-xs">
+                <div class="col7">col7</div>
+    </div> so this will only display on small devices not md or lg -->
+
+
+                        <div class="col-md-6" style="background-color: aqua;">
+                            <p> inside </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col3">side right</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col4">col4</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col5">col5</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col6">col6</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="col7">col7</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 offset-6">
+                <div class="col4">col4</div>
+            </div>
+
+        </div>
+
+        <!-- pushing and pulling property this works when u wat to shift a main colunm from middle to 
+ the sides ie <div class="col-md-6 col-md-push-3">
+                <div class="col2">main col</div>
+               </div>
+               
+                <div class="col-md-3 col-md-pull-6">
+                <div class="col1">side left</div>
+                </div>-->
+
+        <!-- Hidden class property
+                  <div class="col-md-3 hidden-xs or md or lg">
+                <div class="col7">col7</div>
+                 </div> -->
+
+        <!-- Multiple classes
+                  <div class="col-md-3 col-xs-6">
+                <div class="col6">col6</div>
+                 </div>  so this will display differently on the different devices-->
+
+        <div class="row">
+            <div>
+                <h1>H1 Heading</h1>
+                <!-- in h2 we have put a sub title using the <small> element tag -->
+                <h2>H2 Heading <small>secondary text</small></h2>
+                <!-- in bootstrap5 u hide headings using the class bellow -->
+                <h3 class="visually-hidden">H3 hide Heading</h3>
+                <h3>H3 Heading</h3>
+
+
+                <!-- us the lead class if u wat ur texted to starnd out. -->
+                <p class="lead">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+                <!-- if u wat the first three words to starndard out we use the <span class=lead> -->
+                <p> <span class="lead">The standard chunk </span>of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+                <!-- when u wat to center aline the texed as below -->
+                <p class="text-center">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+                <!-- when u donot wat word wraping use the following below -->
+                <p class="text-nowrap">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+                <!-- when u wat to right aline the texed as below -->
+                <p class="text-right"></p>>The standard chunk of Lorem Ipsum used since the 1500s is
+                reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                Malorum" by Cicero are also reproduced in
+                their exact original form, accompanied by English versions
+                from the 1914 translation by H. Rackham.
+                </p>
+                <!-- if u wat to capitalize texted -->
+                <p class="text-capitalize">>The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+
+                <!-- if u wat to make texed all upper case -->
+                <p class="text-uppercase">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+
+                <!-- if u wat to make text lowercase -->
+                <p class="text-lowercase">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+
+                <!-- if u wat to descrease the size of texed-->
+                <p class="small">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+                    Malorum" by Cicero are also reproduced in
+                    their exact original form, accompanied by English versions
+                    from the 1914 translation by H. Rackham.
+                </p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- how to create buttons in bootstrap -->
+    <input type="button" class="btn" value="submit">
+
+<!-- creating the default button -->
+    <input type="button" class="btn-default" value="submit">
+<!-- if u wat to color ur buttons do the following -->
+    <input type="button" class="btn-primary" value="submit">
+
+    <input type="button" class="btn-secondary" value="submit">
+
+    <input type="button" class="btn-success" value="submit">
+
+    <input type="button" class="btn-info" value="submit">
+
+    <input type="button" class="btn-warning" value="submit">
+
+    <input type="button" class="btn-danger" value="submit">
+
+    <input type="button" class="btn-link" value="submit">
+
+    <!-- there are four different sizes of buttons extra large ,medium(is also defalut size), 
+     small, extrasmall -->
+
+
+     <!-- creating a larger size button -->
+     <input type="button" class=" btn-lg btn-primary" value="submit">
+
+     <!-- by default buttons are in line elements, but u can make them block elements -->
+
+     <input type="button" class=" btn btn-primary d-block  w-100"  value="submit">
+
+     <!-- if u wat an active button ie it will have a more dark border -->
+     <input type="button" class=" btn-lg btn-primary actve" value="submit">
+
+<!-- if u wat an disabled button-->
+     <input type="button" class=" btn-lg btn-primary disabled" value="submit">
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
